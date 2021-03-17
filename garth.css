@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Kristi&family=Lovers+Quarrel&family=Merienda&family=Niconne&family=Petit+Formal+Script&family=Poiret+One&display=swap');
+
+.logo {
+    width: 1000px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.font-select {
+    height: 40px;
+}
+
+.img-container {
+    position: relative;
+    border: 1px solid black
+}
+
+.text-box {
+    font-family: 'Merienda';
+    position: absolute;
+    top: 120px;
+    left: 390px;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 550px;
+    text-align: center;
+}

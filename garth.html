@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="garth.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Kristi&family=Lovers+Quarrel&family=Merienda&family=Niconne&family=Petit+Formal+Script&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="img-container">
+        <img src="Garth Logo No Test.png" class="logo" />
+        <div id="text-box" class="text-box">The Garth</div>
+    </div>
+  <h1>Select Font:</h1>
+  <select id="selecth1FontFamily" name="selectFontFamily" onchange="updateh1family();" class="font-select">
+    <option> Merienda </option>
+    <option> Josefin Slab </option>
+    <option> Poiret One </option>                                  
+    <option> Niconne </option>
+    <option> Petit Formal Script </option>
+    <option> Lovers Quarrel </option>
+    <option> Kristi </option>                                  
+  </select>
+    <script>
+      function updateh1family() {
+        var selector = document.getElementById('selecth1FontFamily');
+        var family = selector.options[selector.selectedIndex].value;
+        var h1 = document.getElementById('text-box')
+        h1.style.fontFamily = family;        
+      }
+    </script>
+</body>
+</html>
